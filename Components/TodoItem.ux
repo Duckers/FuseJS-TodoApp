@@ -1,0 +1,6 @@
+<DockPanel ux:Class="Todo.Item">
+    <string ux:Property="Description" />
+    <bool ux:Property="IsDone" />
+    <Text Clicked="{navigation.gotoTodo}" Margin="20" Alignment="VerticalCenter" Value="{Property Description}" />
+    <Switch Margin="20" Dock="Right" Value="{Property IsDone}" />
+</DockPanel>

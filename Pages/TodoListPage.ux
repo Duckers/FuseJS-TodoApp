@@ -1,0 +1,13 @@
+<Page ux:Class="TodoListPage">
+    <StackPanel>
+        <Todo.Header Title="Things to do" />
+        <Each Items="{todoList.todos}">
+            <Todo.Item Description="{description}" IsDone="{isDone}" />
+        </Each>
+        <Text>You have {todosLeft} thing{todosLeft!=1?'s':''} left to do</Text>
+
+        <Text Margin="0,20,0,0"> Add some more:</Text>
+        <TextBox Margin="10" Value="{newTodo}" />
+        <Button Clicked="{addTodo}" Text="Add todo" />
+    </StackPanel>
+</Page>

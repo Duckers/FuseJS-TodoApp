@@ -1,0 +1,13 @@
+<Page ux:Class="TodoItemPage">
+    <StackPanel>
+        <Todo.Header Title="{todoItem.description}" />
+        <Text Margin="20"> This item {todoItem.isDone?'is done!':'needs doing'}</Text>
+        <Text Margin="20">Here are other things {todoItem.isDone?'you are done with':'needs doing'}:</Text>
+        <Each Items="{similarTodos}">
+            <Panel Clicked="{navigation.gotoTodo}" Margin="10" Color="#18f8">
+                <Text Color="White" Margin="20" >{description}</Text>
+            </Panel>
+        </Each>
+        <Button Clicked="{navigation.goBack}" Text="Go Back" />
+    </StackPanel>
+</Page>

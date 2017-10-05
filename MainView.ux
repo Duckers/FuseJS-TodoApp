@@ -1,0 +1,8 @@
+<App Model="TodoApp">
+    <Panel>
+        <Navigator Pages="{navigation.pages}">
+            <TodoListPage ux:Template="TodoListPage" />
+            <TodoItemPage ux:Template="TodoItemPage" />
+        </Navigator>
+    </Panel>
+</App>
