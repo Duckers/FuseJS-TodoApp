@@ -1,7 +1,7 @@
 
 import DI from 'FuseJS/DI'
 import TodoList from 'Model/TodoList'
-import Navigation from 'Services/Navigation'
+import Navigation from 'Model/Navigation'
 
 export default class TodoApp {
     constructor() {
