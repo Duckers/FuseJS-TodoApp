@@ -1,4 +1,6 @@
 <App Model="TodoApp">
-    <Panel Color="Blue" Margin="100,0,0,0" Width="50%" Alignment="Left">
-    </Panel>
+    <Navigator Pages="{navigation.pages}">
+        <TodoListPage ux:Template="TodoListPage" />
+        <TodoItemPage ux:Template="TodoItemPage" />
+    </Navigator>
 </App>
