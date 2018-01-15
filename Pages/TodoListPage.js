@@ -1,7 +1,7 @@
-import DI from 'FuseJS/DI'
+import {current} from 'TodoApp'
 
 export default class TodoListPage {
-    constructor(todoList = DI("todoList")) {
+    constructor(todoList = current.app.todoList) {
         this.todoList = todoList
         this.newTodo = ""
     }
